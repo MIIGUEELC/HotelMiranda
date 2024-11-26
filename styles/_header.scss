@@ -93,7 +93,8 @@
     }
 
     &__menu {
-        display: none;
+        display: flex;
+        //cambiarle a displar none en js 
         position: fixed;
         top: 7rem;
         bottom: 0;
@@ -101,7 +102,7 @@
         height: 20rem;
         left: 0;
         justify-content: center;
-        flex-direction: column;
+        flex-direction:column;
         gap: 2.4rem;
         padding: 0 5%;
         background-color: white;
