@@ -449,6 +449,44 @@ body {
   color: #111111;
 }
 
+.btn {
+  border-style: none;
+  padding: 6rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2.3rem 5.6rem;
+  background-color: #b99044;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #736956;
+  transition: 0.5s;
+}
+.btn--large {
+  border-style: none;
+  padding: 2.3rem 4.5rem;
+}
+@media all and (min-width: 1000px) {
+  .btn--large {
+    min-width: 25rem;
+    margin-left: 15rem;
+    padding: 2.3rem 2.4rem;
+  }
+}
+.btn--light {
+  width: 100%;
+  font-weight: 400;
+}
+
 .featuresSection {
   margin-top: 6rem;
   max-width: 100%;
@@ -1922,6 +1960,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
+}
+@media all and (max-width: 999px) {
+  .dark__container {
+    display: none;
+  }
 }
 @media all and (min-width: 1000px) {
   .dark__container {

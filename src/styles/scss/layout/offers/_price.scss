@@ -115,7 +115,7 @@
                     background-color: $white;
                 }
 
-                @include mq.nondesktop {
+                @include mq.nondesktop {  // para qeu desaparezca
                     display: none;
                 }
 
