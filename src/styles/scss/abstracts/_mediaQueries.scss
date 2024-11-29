@@ -9,10 +9,10 @@ $tablet: 'screen and (min-width: #{$mobile-layout + 1px}) and (max-width: #{$des
 $mobile: 'all and (max-width: #{$mobile-layout})';
 $mobilemenu: 'all and (max-width: #{$mobilemenu-layout})';
 
-// $nonbigdesktop: 'all and (max-width: #{$bigdesktop-layout - 1px})';
-// $nondesktop: 'all and (max-width: #{$desktop-layout - 1px})';
-// $nonmobile: 'all and (min-width: #{$mobile-layout + 1px})';
-// $nonmobilemenu: 'all and (min-width: ' 996px')';
+ $nonbigdesktop: 'all and (max-width: #{$bigdesktop-layout - 1px})';
+ $nondesktop: 'all and (max-width: #{$desktop-layout - 1px})';
+ $nonmobile: 'all and (min-width: #{$mobile-layout + 1px})';
+ $nonmobilemenu: 'all and (min-width: ' 996px')';
 
 @mixin bigdesktop {
     @media #{$bigdesktop} {
@@ -20,7 +20,11 @@ $mobilemenu: 'all and (max-width: #{$mobilemenu-layout})';
     }
 }
 
-
+@mixin nonbigdesktop {
+    @media #{$nonbigdesktop} {
+        @content;
+    }
+}
 
 @mixin desktop {
     @media #{$desktop} {
@@ -28,7 +32,11 @@ $mobilemenu: 'all and (max-width: #{$mobilemenu-layout})';
     }
 }
 
-
+@mixin nondesktop {
+    @media #{$nondesktop} {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media #{$tablet} {
@@ -42,3 +50,8 @@ $mobilemenu: 'all and (max-width: #{$mobilemenu-layout})';
     }
 }
 
+@mixin nonmobile {
+    @media #{$nonmobile} {
+        @content;
+    }
+}

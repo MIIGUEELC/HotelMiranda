@@ -2964,6 +2964,11 @@ body {
     background-color: #ffffff;
   }
 }
+@media all and (max-width: 999px) {
+  .offerRoomSection__room__bigContainer__priceContainerDesktop {
+    display: none;
+  }
+}
 .offerRoomSection__room__bigContainer__priceContainerDesktop--gold {
   font-family: "Archivo", sans-serif;
   font-style: normal;

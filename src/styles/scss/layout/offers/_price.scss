@@ -109,15 +109,15 @@
                 background-color: rgba(17, 17, 17, 0.5);
 
                 @include mq.desktop {
-                    display: block;
+                    display: block;  // aqui cuidao
                     top: 5rem;
                     right: 2.5rem;
                     background-color: $white;
                 }
 
-                // @include mq.nondesktop {
-                //     display: none;
-                // }
+                @include mq.nondesktop {
+                    display: none;
+                }
 
                 &--gold {
                     font-family: $archivo-font;
