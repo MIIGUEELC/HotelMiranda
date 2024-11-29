@@ -56,9 +56,9 @@
         flex-wrap: wrap;
         gap: 3rem;
 
-        @include mq.nondesktop {
-            display: none;
-        }
+        // @include mq.nondesktop {
+        //     display: none;
+        // }
 
         @include mq.desktop {
             justify-content: space-between;

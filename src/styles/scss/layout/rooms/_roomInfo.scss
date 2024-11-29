@@ -54,9 +54,9 @@
     width: 45%;
     margin: 10rem 2% 0 10%;
 
-    @include mq.nondesktop {
-        display: none;
-    }
+    // @include mq.nondesktop {
+    //     display: none;
+    // }
 
     &__container {
         width: 95%;

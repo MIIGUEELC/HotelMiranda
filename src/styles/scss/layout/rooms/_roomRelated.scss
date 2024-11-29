@@ -189,9 +189,9 @@
         height: fit-content;
         text-align: center;
 
-        @include mq.nondesktop {
-            display: none;
-        }
+        // @include mq.nondesktop {
+        //     display: none;
+        // }
 
         &__extras {
             position: absolute;

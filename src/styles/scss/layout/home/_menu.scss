@@ -218,9 +218,9 @@
     &__imagesDesktop {
         padding-top: 12rem;
 
-        @include mq.nondesktop {
-            display: none;
-        }
+        // @include mq.nondesktop {
+        //     display: none;
+        // }
 
         display: flex;
         flex-direction: row;

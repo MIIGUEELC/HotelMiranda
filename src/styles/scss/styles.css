@@ -269,11 +269,6 @@ body {
   background-size: cover;
   background-repeat: repeat, no-repeat;
 }
-@media all and (min-width: 641px) {
-  .footer {
-    background-image: url("../../assets/imgs/footer-big.jpg");
-  }
-}
 .footer__container1 {
   width: 100%;
   padding: 3.2rem 2.2rem 3.2rem 2.2rem;
@@ -562,11 +557,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-}
-@media all and (max-width: 999px) {
-  .featuresSection__container {
-    display: none;
-  }
 }
 .featuresSection__container__slides {
   flex-basis: 25%;
@@ -1626,11 +1616,6 @@ body {
   justify-content: space-between;
   gap: 1rem;
 }
-@media all and (max-width: 999px) {
-  .menuSection__imagesDesktop {
-    display: none;
-  }
-}
 .menuSection__imagesDesktop img {
   height: 25%;
   width: 33%;
@@ -1937,11 +1922,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-}
-@media all and (max-width: 999px) {
-  .dark__container {
-    display: none;
-  }
 }
 @media all and (min-width: 1000px) {
   .dark__container {
@@ -2306,11 +2286,6 @@ body {
   display: inline-block;
   width: 45%;
   margin: 10rem 2% 0 10%;
-}
-@media all and (max-width: 999px) {
-  .roomSectionDesktop {
-    display: none;
-  }
 }
 .roomSectionDesktop__container {
   width: 95%;
@@ -2788,11 +2763,6 @@ body {
   height: fit-content;
   text-align: center;
 }
-@media all and (max-width: 999px) {
-  .relatedRoomsSection__swiper__slide {
-    display: none;
-  }
-}
 .relatedRoomsSection__swiper__slide__extras {
   position: absolute;
   width: 30rem;
@@ -2992,11 +2962,6 @@ body {
     top: 5rem;
     right: 2.5rem;
     background-color: #ffffff;
-  }
-}
-@media all and (max-width: 999px) {
-  .offerRoomSection__room__bigContainer__priceContainerDesktop {
-    display: none;
   }
 }
 .offerRoomSection__room__bigContainer__priceContainerDesktop--gold {
@@ -3325,11 +3290,6 @@ body {
   height: fit-content;
   text-align: center;
   background-color: #ffffff;
-}
-@media all and (max-width: 999px) {
-  .popularRoomsSection__swiper__slide {
-    display: none;
-  }
 }
 .popularRoomsSection__swiper__slide__extras {
   position: absolute;

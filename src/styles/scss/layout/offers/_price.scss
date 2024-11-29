@@ -115,9 +115,9 @@
                     background-color: $white;
                 }
 
-                @include mq.nondesktop {
-                    display: none;
-                }
+                // @include mq.nondesktop {
+                //     display: none;
+                // }
 
                 &--gold {
                     font-family: $archivo-font;
