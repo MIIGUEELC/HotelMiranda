@@ -184,6 +184,13 @@ body {
   }
 }
 
+@media all and (min-width: 1000px) {
+  .nav.transition-top {
+    transform: translateY(-200px) !important;
+    transition: all 1s ease-out;
+  }
+}
+
 .subheaderSection {
   position: relative;
   background-color: #333333;
@@ -2330,6 +2337,11 @@ body {
   width: 45%;
   margin: 10rem 2% 0 10%;
 }
+@media all and (max-width: 999px) {
+  .roomSectionDesktop {
+    display: none;
+  }
+}
 .roomSectionDesktop__container {
   width: 95%;
   background-color: #ffffff;
@@ -2682,7 +2694,7 @@ body {
 .relatedRoomsSection .roomSlider__slides--extras,
 .relatedRoomsSection .swiper--extras {
   position: absolute;
-  width: 30rem;
+  width: 70% !important;
   height: 8rem;
   left: 0;
   right: 0;
@@ -2806,9 +2818,14 @@ body {
   height: fit-content;
   text-align: center;
 }
+@media all and (max-width: 999px) {
+  .relatedRoomsSection__swiper__slide {
+    display: none;
+  }
+}
 .relatedRoomsSection__swiper__slide__extras {
   position: absolute;
-  width: 30rem;
+  width: 50%;
   height: 8rem;
   left: 0;
   right: 0;
@@ -2932,7 +2949,7 @@ body {
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 2.5rem;
-  color: #b99044;
+  color: #ffffff;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -2942,7 +2959,7 @@ body {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  color: #b99044;
+  color: #ffffff;
   text-decoration: line-through;
   display: inline-block;
 }
@@ -3414,4 +3431,137 @@ body {
 .popularRoomsSection__swiper__slide__container__bookNow:hover {
   cursor: pointer;
   color: #111111;
+}
+
+.contactDetailsSection {
+  width: 90%;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.7rem;
+}
+@media all and (min-width: 1000px) {
+  .contactDetailsSection {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 80%;
+  }
+}
+.contactDetailsSection__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2.7rem;
+  width: 100%;
+  height: 19rem;
+}
+@media all and (min-width: 1000px) {
+  .contactDetailsSection__container {
+    width: 30%;
+  }
+}
+.contactDetailsSection__container__img {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 5rem;
+}
+.contactDetailsSection__container__subcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 1.5rem;
+  padding-top: 5rem;
+}
+.contactDetailsSection__container__subcontainer__header {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #222222;
+}
+.contactDetailsSection__container__subcontainer__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #777777;
+}
+.contactDetailsSection__container__number {
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 23.4rem;
+  letter-spacing: -0.6rem;
+  color: #f8f8f8;
+  z-index: -1;
+}
+
+.contactFormSection {
+  width: 90%;
+  margin: auto;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+@media all and (min-width: 1000px) {
+  .contactFormSection div:nth-child(3) {
+    width: 91.5%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .contactFormSection {
+    width: 80%;
+  }
+}
+.contactFormSection__firstContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+@media all and (min-width: 1000px) {
+  .contactFormSection__firstContainer {
+    width: 45%;
+  }
+}
+.contactFormSection__firstContainer__input {
+  position: relative;
+}
+.contactFormSection__firstContainer__input__field {
+  border: none;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 2.5rem 5.2rem;
+}
+.contactFormSection__firstContainer__input__field--big {
+  border: none;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 2.5rem 5.2rem 13rem 5.2rem;
+}
+.contactFormSection__firstContainer__input__icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 2rem;
+  top: 2.5rem;
+}
+.contactFormSection button {
+  width: 80%;
+  margin-top: 2rem;
+}
+@media all and (min-width: 1000px) {
+  .contactFormSection button {
+    width: 20%;
+  }
 }

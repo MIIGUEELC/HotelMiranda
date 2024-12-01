@@ -71,7 +71,7 @@
 
         &--extras {
             position: absolute;
-            width: 30rem;
+            width: 70%!important;
             height: 8rem;
             left: 0;
             right: 0;
@@ -189,13 +189,13 @@
         height: fit-content;
         text-align: center;
 
-        // @include mq.nondesktop {
-        //     display: none;
-        // }
+        @include mq.nondesktop {
+            display: none;
+        }
 
         &__extras {
             position: absolute;
-            width: 30rem;
+            width: 50%;
             height: 8rem;
             left: 0;
             right: 0;
